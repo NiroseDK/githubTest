@@ -6,16 +6,22 @@ namespace Store
 {
     class Store
     {
-        Showcase showcase;
+        public Showcase showcase;
 
         public Store ()
         {
             showcase = new Showcase(5);
-            Game g1 = new Game("Raid", 7, "Shooter", 60);
-            // We need to add games to the showcase 
-        }
+            Game g1 = new Game("Braid", 7, "Puzzle", 20);
+            Game g2 = new Game("Warcraft", 4, "RTS", 40);
+            Game g3 = new Game("Doom", 9, "Shooter", 60);
 
-        // Buying
-        // Seeing what's for sale
+            DLC d1 = new DLC(g2, "value pack", 5, 10);
+            g2.dlcs.Add(d1);
+
+            // We need to add games to the showcase 
+            showcase.AddGame(g1);
+            showcase.AddGame(g2);
+            showcase.AddGame(g3);
+        }
     }
 }

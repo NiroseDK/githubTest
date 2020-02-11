@@ -11,10 +11,10 @@ namespace Store
         string title;
         string description;
         int rating;
-        string[] genre;
+        string genre;
         double price;
 
-        public DLC(Game d_Game, string d_Title, int d_Rating, string[] d_Genre, double d_Price)
+        public DLC(Game d_Game, string d_Title, int d_Rating,  double d_Price)
         {
             game = d_Game;
             

@@ -6,18 +6,18 @@ namespace Store
 {
     class Game
     {
-        string title;
-        string description;
-        int rating;
-        string[] genre;
-        string systemReq; 
-        double price;
+        public string name;
+        public string description;
+        public int rating;
+        public string genre;
+        public string systemReq;
+        public double price;
 
-        List<DLC> dlcs; 
+        public List<DLC> dlcs; 
 
-        public Game(string g_Title, int g_Rating, string[] g_Genre, double g_Price)
+        public Game(string g_name, int g_Rating, string g_Genre, double g_Price)
         {
-            title = g_Title;
+            name = g_name;
             rating = g_Rating;
             genre = g_Genre;
             price = g_Price;
